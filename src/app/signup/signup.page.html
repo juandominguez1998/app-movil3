@@ -1,0 +1,25 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="primary" routerLink="/login">
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <!-- <ion-button routerLink="/home">crear usuario</ion-button> -->
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1>Crea tu<br />Cuenta</h1>
+
+  <form id="form">
+    <app-input placeholder="Tu nombre"></app-input>
+    <app-input placeholder="Correo"></app-input>
+    <app-input type="password" placeholder="Contraseña"></app-input>
+    <ion-button expand="block" shape="round" routerLink="/login">Unete al servicio</ion-button>
+  </form>
+
+  <p>Al presionar 'Únete al servicio', aceptas <br />nuestros términos y condiciones.</p>
+</ion-content>
